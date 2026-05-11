@@ -434,7 +434,9 @@ h3 {
 }
 
 .project-card p,
-.principle p {
+.principle p,
+.disclaimer-card p,
+.legal-section p {
   color: var(--muted);
   text-wrap: pretty;
 }
@@ -457,6 +459,90 @@ h3 {
   margin-top: 1rem;
   color: var(--accent-strong);
   font-weight: 800;
+}
+
+.project-actions {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;
+  align-items: center;
+  margin-top: 1.2rem;
+}
+
+.inline-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.25rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+  font-size: 0.92rem;
+  font-weight: 800;
+  padding: 0.3rem 0.75rem;
+  text-decoration: none;
+}
+
+.inline-link:hover {
+  background: #d7f1dd;
+  color: var(--accent-strong);
+}
+
+.project-note {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.25rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 0.3rem 0.75rem;
+}
+
+.section-compact {
+  padding-block: clamp(3rem, 6vw, 5rem);
+}
+
+.disclaimer-card,
+.readable-page {
+  max-width: 56rem;
+}
+
+.disclaimer-card,
+.legal-section {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  padding: clamp(1.35rem, 3vw, 2rem);
+}
+
+.disclaimer-card h2,
+.legal-section h2 {
+  font-size: clamp(1.55rem, 3vw, 2.25rem);
+  letter-spacing: -0.045em;
+}
+
+.disclaimer-card p:last-child,
+.legal-section p:last-child {
+  margin-bottom: 0;
+}
+
+.legal-section {
+  margin-top: 1rem;
+  box-shadow: none;
+}
+
+.detail-list {
+  color: var(--muted);
+  margin: 1.25rem 0 0;
+  padding-left: 1.15rem;
+}
+
+.detail-list li + li {
+  margin-top: 0.45rem;
 }
 
 .approach-grid {
@@ -559,6 +645,14 @@ h3 {
   .approach-grid,
   .detail-grid {
     grid-template-columns: 1fr;
+  }
+
+  .brand {
+    font-size: 0.98rem;
+  }
+
+  .site-nav {
+    gap: 0.2rem;
   }
 
   .hero {
