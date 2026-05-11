@@ -2,22 +2,138 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>LilyPad  Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LilyPad — Portfolio</title>
+  <meta name="description" content="LilyPad is a small, independent portfolio for practical web projects and lightweight digital work." />
   <meta name="email" content="admin@lilypad.llc" />
+  <meta property="og:title" content="LilyPad — Portfolio" />
+  <meta property="og:description" content="Modern, lightweight portfolio for practical web projects." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://lilypad.llc/" />
+  <link rel="canonical" href="https://lilypad.llc/" />
   <link rel="stylesheet" href="/css/style.css" />
 </head>
 <body>
-  <header><h1>LilyPad</h1><p>Contact: <a href="mailto:admin@lilypad.llc">admin@lilypad.llc</a></p></header>
-  <main>
-    <section id="portfolio">
-      <h2>Portfolio</h2>
-      <ul>
-        <li><a href="/portfolio/item1/">Project One  short description</a></li>
-        <li><a href="/portfolio/item2/">Project Two  short description</a></li>
-      </ul>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" aria-label="Site header">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="LilyPad home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" role="img" focusable="false">
+            <path d="M24 6c10.49 0 19 6.94 19 15.5S34.49 37 24 37 5 30.06 5 21.5 13.51 6 24 6Z" />
+            <path d="M25.5 7.5 36 18.25c-4.84.17-8.17-1.28-10-4.35-.87 2.03-2.47 3.75-4.8 5.16" />
+            <circle cx="16.75" cy="23.25" r="2.4" />
+          </svg>
+        </span>
+        <span>LilyPad</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#portfolio">Portfolio</a>
+        <a href="#approach">Approach</a>
+        <a class="nav-contact" href="mailto:admin@lilypad.llc">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Independent digital work</p>
+          <h1 id="hero-title">Small projects, built with care.</h1>
+          <p class="hero-lede">LilyPad is a lightweight portfolio for practical web projects, experiments, and client-friendly digital work.</p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button button-primary" href="mailto:admin@lilypad.llc">Email LilyPad</a>
+            <a class="button button-secondary" href="#portfolio">View portfolio</a>
+          </div>
+        </div>
+
+        <div class="hero-card" aria-label="LilyPad profile summary">
+          <div class="card-topline">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Available for thoughtful work</span>
+          </div>
+          <svg class="pond-art" viewBox="0 0 520 360" role="img" aria-labelledby="pond-title pond-desc" focusable="false">
+            <title id="pond-title">Abstract lily pad pond illustration</title>
+            <desc id="pond-desc">Soft green lily pads floating on a calm warm background.</desc>
+            <defs>
+              <linearGradient id="pondGradient" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#f6f5f4" />
+                <stop offset="1" stop-color="#eaf6ec" />
+              </linearGradient>
+            </defs>
+            <rect width="520" height="360" rx="28" fill="url(#pondGradient)" />
+            <path class="ripple" d="M88 118c48-28 112-28 160 0M276 260c42-24 98-24 140 0M60 248c38-22 88-22 126 0" />
+            <path class="pad pad-one" d="M150 132c45-49 133-23 145 43 12 65-58 111-114 75-42-27-56-78-31-118Z" />
+            <path class="pad pad-two" d="M318 124c34-35 96-16 106 31 9 46-40 79-79 55-31-18-43-57-27-86Z" />
+            <path class="pad pad-three" d="M242 228c30-31 85-14 94 28 8 40-35 70-70 49-27-17-38-51-24-77Z" />
+            <path class="cut" d="M214 177 292 139" />
+            <path class="cut" d="M363 159 421 132" />
+            <path class="cut" d="M286 262 335 239" />
+            <circle class="accent" cx="127" cy="221" r="9" />
+            <circle class="accent accent-small" cx="412" cy="235" r="5" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section section-warm" aria-labelledby="portfolio-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Portfolio</p>
+          <h2 id="portfolio-title">Current work</h2>
+          <p>Two portfolio entries are live as lightweight placeholders. Replace the short descriptions when the project pages are ready.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-meta">Project 01</div>
+            <h3><a href="/portfolio/item1/">Project One</a></h3>
+            <p>Short description for the first portfolio item. Keep it direct, concrete, and easy to scan.</p>
+            <span class="project-link" aria-hidden="true">View project →</span>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">Project 02</div>
+            <h3><a href="/portfolio/item2/">Project Two</a></h3>
+            <p>Short description for the second portfolio item. Add outcome, role, or technology when available.</p>
+            <span class="project-link" aria-hidden="true">View project →</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="approach" class="section" aria-labelledby="approach-title">
+      <div class="container approach-grid">
+        <div>
+          <p class="eyebrow">Approach</p>
+          <h2 id="approach-title">Quietly useful, intentionally simple.</h2>
+        </div>
+        <div class="principles" aria-label="Design and build principles">
+          <div class="principle">
+            <h3>Lightweight</h3>
+            <p>Static pages, plain HTML and CSS, fast loading, and no framework weight unless a project genuinely needs it.</p>
+          </div>
+          <div class="principle">
+            <h3>Accessible</h3>
+            <p>Readable contrast, semantic structure, keyboard-friendly controls, and responsive layouts from the start.</p>
+          </div>
+          <div class="principle">
+            <h3>Friendly</h3>
+            <p>Clear copy, calm visuals, and enough polish to feel deliberate without getting in the way.</p>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
-  <footer><small> LilyPad</small></footer>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span aria-label="LilyPad">LilyPad</span></p>
+      <a href="mailto:admin@lilypad.llc">admin@lilypad.llc</a>
+    </div>
+  </footer>
 </body>
 </html>
